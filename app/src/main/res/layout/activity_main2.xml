@@ -4,10 +4,11 @@
 	 xmlns:tools="http://schemas.android.com/tools"
 	 android:layout_width="match_parent"
 	 android:layout_height="match_parent"
-	 tools:context=".Main2Activity">
+	 tools:context=".Main2Activity"
+	 android:id="@+id/backgroundActivity">
 
 	 <TextView
-		  android:id="@+id/SecondActivityText"
+		  android:id="@+id/colorText"
 		  android:layout_width="wrap_content"
 		  android:layout_height="wrap_content"
 		  android:text="@string/second_activity"
@@ -16,5 +17,55 @@
 		  app:layout_constraintBottom_toBottomOf="parent"
 		  app:layout_constraintEnd_toEndOf="parent"
 		  app:layout_constraintStart_toStartOf="parent"
-		  app:layout_constraintTop_toTopOf="parent" />
+		  app:layout_constraintTop_toTopOf="parent"
+		  app:layout_constraintVertical_bias="0.262" />
+
+	 <LinearLayout
+		  android:layout_width="0dp"
+		  android:layout_height="wrap_content"
+		  android:layout_marginTop="32dp"
+		  android:orientation="vertical"
+		  app:layout_constraintBottom_toBottomOf="parent"
+		  app:layout_constraintEnd_toEndOf="parent"
+		  app:layout_constraintStart_toStartOf="parent"
+		  app:layout_constraintTop_toBottomOf="@+id/colorText">
+
+		  <Button
+			   android:id="@+id/btnRed"
+			   android:layout_width="match_parent"
+			   android:layout_height="wrap_content"
+			   android:text="@string/Red"
+			   android:background="@color/red"
+			   />
+
+		  <Button
+			   android:id="@+id/btnGreen"
+			   android:layout_width="match_parent"
+			   android:layout_height="wrap_content"
+			   android:text="@string/Green"
+			   android:background="@color/green"
+			   />
+
+		  <Button
+			   android:id="@+id/btnYellow"
+			   android:layout_width="match_parent"
+			   android:layout_height="wrap_content"
+			   android:text="@string/Yello"
+			   android:background="@color/yellow"
+			   />
+
+		  <Button
+			   android:id="@+id/btnOrange"
+			   android:layout_width="match_parent"
+			   android:layout_height="wrap_content"
+			   android:text="@string/Orange"
+			   android:background="@color/orange"/>
+
+		  <Button
+			   android:id="@+id/btnBlue"
+			   android:layout_width="match_parent"
+			   android:layout_height="wrap_content"
+			   android:text="@string/Blue"
+			   android:background="@color/blue"/>
+	 </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

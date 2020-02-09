@@ -3,5 +3,11 @@
 	 <string name="changetext">Change Text</string>
 	 <string name="textChanged">Androidx Code</string>
 	 <string name="go_to_second_activity">Go To Second Activity</string>
-	 <string name="second_activity">Second Activity</string>
+	 <string name="second_activity">Color</string>
+	 <string name="Green">Green</string>
+	 <string name="Yello">Yellow</string>
+	 <string name="Blue">Blue</string>
+	 <string name="Orange">Orange</string>
+	 <string name="Red">Red</string>
+
 </resources>
